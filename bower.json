@@ -1,0 +1,25 @@
+{
+  "name": "libsys",
+  "description": "",
+  "main": "src/bin/www.ts",
+  "authors": [
+    "iHeine"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "moment": "^2.29.1",
+    "angular": "^1.8.2",
+    "jquery": "^3.6.0",
+    "vue": "^2.6.14"
+  }
+}

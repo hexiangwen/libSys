@@ -9,10 +9,14 @@
   "author": "iHeine",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.14",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
-    "@types/express": "^4.17.12"
+    "@types/express": "^4.17.12",
+    "@types/mongoose": "^5.11.97",
+    "@types/mysql": "^2.15.18"
   }
 }
