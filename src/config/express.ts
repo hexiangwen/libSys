@@ -5,8 +5,10 @@ import config from "./config";
 export = function () {
   console.log("init express...");
   const app = express();
-  app.use(express.static('./vue-libsys/dist'))
-  app.use(express.static('./public'))
+  app.use(express.static("./vue-libsys/dist"));
+  app.use(express.static("./public"));
+  app.use(express.urlencoded({ extended: true }));
+  app.use(express.json());
   require("../app/routes/news.server.routes")(app);
   app.use(function (req, res, next) {
     res.status(404);
