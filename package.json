@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/bin/www.ts",
   "scripts": {
-    "build": "rm -rf build/ && prettier --write src && tsc"
+    "build": "rm -rf build/ && prettier --write src && tsc",
+    "dev": "nodemon src/bin/www",
+    "start": "nodemon build/bin/www"
   },
   "author": "iHeine",
   "license": "ISC",
