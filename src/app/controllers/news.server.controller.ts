@@ -2,8 +2,7 @@ import mongoose from "mongoose";
 const News = mongoose.model("News");
 export = {
   create: function (req:any,res:any,next:any) {
-      console.log(req.body)
-      var news = new News(req.body);
+    var news = new News(req.body);
     news.save(function (err: any) {
       if (err) return next(err);
       return res.json(news);
@@ -21,13 +20,12 @@ export = {
       });
   },
   getById: function (req:any,res:any,next:any,id:any) {
-    if (!id) return next(new Error("News not Found"));
+    if (!id) return next(new Error("News id not Found"));
     News.findOne({ _id: id }).exec(function (err: any, doc: any) {
       if (err) return next(err);
-      if (!doc) return next(new Error("News not Found"));
-
+      if (!doc) return next(new Error("News doc not Found"));
       req.news = doc;
-      // return next();
+      return next();
     });
   },
   get: function (
