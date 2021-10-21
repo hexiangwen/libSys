@@ -1,0 +1,13 @@
+{
+  "type": "mysql",
+  "host": "server",
+  "post": "3306",
+  "database": "libsys2",
+  "username":"root",
+  "password":"123mysql...",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "source/entity/*.ts"
+  ]
+}
